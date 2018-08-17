@@ -1,0 +1,69 @@
+@import 'styles';
+
+
+.index-main {
+    
+    .link{
+        text-transform: uppercase;
+        padding:5px 0;
+        font-display: $font2;
+        color:#333;
+        margin:0
+    }
+    .content{
+        padding: 30px 20px 30px 20px;
+        font-family: $font2;
+        
+        .link-cover{
+            margin:5vw 0;
+            border-bottom:1px solid $purple;
+            padding:10px 0;
+            width:150px;
+        }
+    }
+    .text{
+        color:#595959;
+    }
+    
+    h4{
+    font-family:$font1;
+    font-weight:100;
+
+}
+.bd{
+    background: $yellow;
+    width: 150px;
+    font-size: 16px;
+    padding:0 2px 0 2px;
+    color: white;
+    
+}
+
+    @extend %layout;
+    grid-template-columns: 50% 50%;
+    
+    .in-leftSide{
+    margin:8vw 20px;
+    }
+    .in-rightSide{
+        background: url('/static/img/slide2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center
+    }
+}
+img{
+    width:100%;
+    height:100%;
+}
+@media screen and (max-width:787px){
+    .index-main {
+          grid-template-columns:none;
+        .one{
+            order:1
+        }
+        .two{
+            order:2
+        }
+    }
+}

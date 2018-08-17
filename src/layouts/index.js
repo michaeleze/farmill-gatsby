@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-
+import Footer from './shared/footer'
 import Header from '../components/header'
-import './index.css'
+import './index.scss'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -25,6 +25,7 @@ const Layout = ({ children, data }) => (
     >
       {children()}
     </div>
+      <Footer/>
   </div>
 )
 
