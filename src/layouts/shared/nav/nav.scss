@@ -1,4 +1,4 @@
-@import 'styles';
+@import '../../index';
 
 .txt-black{
     color:black;
@@ -11,6 +11,14 @@
      background:white;
     transition: all .4s ease;
     height:100%;
+    .bt-menu{
+        color:black;
+    }
+    .fm-navbar-body {
+        a{
+            color:rgb(85, 26, 139)
+        }
+    }
 }
 .fm-navbar-menu {
     position: fixed;
@@ -23,13 +31,13 @@
 }
 .white{
     background:white;
-     border-bottom: 1px solid c;
+     border-bottom: 1px solid #ebebeb;
 }
 .fm-navbar-body {
    padding: 15px 0;
     display: grid;
-    background:$purple;
-    border-bottom:2px solid yellow;
+   // background:$purple;
+   // border-bottom:2px solid yellow;
 //    background:#3333337a;
 //    grid-template-columns:auto auto;
         a {
@@ -56,6 +64,7 @@
     .nav {
         margin-top:10vh;
         display:block;
+        color:#212121
     }
     a{
         display: block;

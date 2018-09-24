@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Footer from './shared/footer'
+import Footer from './shared/footer/footer'
+import Nav from './shared/nav/nav'
 import Header from '../components/header'
 import './index.scss'
 
@@ -14,15 +15,8 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+  <Nav/>
+    <div id='view'>
       {children()}
     </div>
       <Footer/>

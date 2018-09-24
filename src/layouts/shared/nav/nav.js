@@ -1,6 +1,6 @@
-import '../../styles/nav.scss';
-import Link from 'next/link';
 import React,{Component} from 'react';
+import Link from "gatsby-link";
+import './nav.scss';
 
 class Nav extends Component{
  constructor(props){
